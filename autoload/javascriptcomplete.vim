@@ -156,10 +156,20 @@ function! javascriptcomplete#CompleteJS(findstart, base)
 		" Document - document.
 		let docuprop = ['anchors', 'applets', 'childNodes', 'embeds', 'forms', 'images', 'links', 'stylesheets',
 					\ 'body', 'cookie', 'documentElement', 'domain', 'lastModified', 'referrer', 'title', 'URL']
-		let documeth = ['close', 'createAttribute', 'createElement', 'createTextNode', 'focus', 'getElementById',
-					\ 'getElementsByName', 'getElementsByTagName', 'open', 'write', 'writeln',
-					\ 'onClick', 'onDblClick', 'onFocus', 'onKeyDown', 'onKeyPress', 'onKeyUp',
-					\ 'onMouseDown', 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp', 'onResize']
+		let documeth = ['adoptNode', 'close', 'createAttribute',
+					\ 'createAttributeNS', 'createCDATASection', 'createComment',
+					\ 'createDocumentFragment', 'createElement', 'createElementNS',
+					\ 'createEvent', 'createExpression', 'createNSResolver',
+					\ 'createNodeIterator', 'createProcessingInstruction', 'createRange',
+					\ 'createTextNode', 'createTouchList', 'createTreeWalker',
+					\ 'enableStyleSheetsForSet', 'evaluate', 'focus', 'getElementById',
+					\ 'getElementById', 'getElementsByClassName', 'getElementsByName',
+					\ 'getElementsByTagName', 'getElementsByTagNameNS',
+					\ 'hasStorageAccess', 'importNode', 'onClick', 'onDblClick',
+					\ 'onFocus', 'onKeyDown', 'onKeyPress', 'onKeyUp', 'onMouseDown',
+					\ 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp',
+					\ 'onResize', 'open', 'querySelector', 'querySelectorAll',
+					\ 'requestStorageAccess', 'write', 'writeln']
 
 		call map(documeth, 'v:val."("')
 		let docuxprop = ['attributes', 'childNodes', 'doctype', 'documentElement', 'firstChild',
