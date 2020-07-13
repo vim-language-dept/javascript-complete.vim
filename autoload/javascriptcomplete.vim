@@ -386,9 +386,11 @@ function! javascriptcomplete#CompleteJS(findstart, base)
 		let xdomelemprop = ['attributes', 'childNodes', 'firstChild', 'lastChild', 
 					\ 'namespaceURI', 'nextSibling', 'nodeName', 'nodeType', 'nodeValue',
 					\ 'ownerDocument', 'parentNode', 'prefix', 'previousSibling', 'tagName']
-		let xdomelemmeth = ['appendChild', 'cloneNode', 'getAttribute', 'getAttributeNode',
-					\ 'getElementsByTagName', 'hasChildNodes', 'insertBefore', 'normalize',
-					\ 'removeAttribute', 'removeAttributeNode', 'removeChild', 'replaceChild',
+		let xdomelemmeth = ['appendChild', 'addEventListener', 'cloneNode',
+					\ 'dispatchEvent', 'getAttribute', 'getAttributeNode',
+					\ 'getElementsByTagName', 'hasChildNodes', 'insertBefore',
+					\ 'normalize', 'removeAttribute', 'removeAttributeNode',
+					\ 'removeChild', 'removeEventListener', 'replaceChild',
 					\ 'setAttribute', 'setAttributeNode']
 		call map(xdomelemmeth, 'v:val."("')
 		let xdomelems = xdomelemprop + xdomelemmeth
