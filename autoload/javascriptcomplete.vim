@@ -1,7 +1,9 @@
 " Vim completion script
 " Language:	Java Script
-" Maintainer:	Mikolaj Machowski ( mikmach AT wp DOT pl )
-" Last Change:	2017 Mar 04
+" Maintainer:	Jay Sitter (jay@jaysitter.com)
+" URL: https://github.com/jsit/javascriptcomplete.vim/
+" Previous Maintainer:	Mikolaj Machowski ( mikmach AT wp DOT pl )
+" Last Change:	2020 Jul 30
 
 function! javascriptcomplete#CompleteJS(findstart, base)
   if a:findstart
