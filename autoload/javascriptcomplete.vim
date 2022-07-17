@@ -1,5 +1,5 @@
 " Vim completion script
-" Language:	Java Script
+" Language:	JavaScript
 " Maintainer:	Jay Sitter (jay@jaysitter.com)
 " URL: https://github.com/vim-language-dept/javascript-complete.vim/
 " Previous Maintainer:	Mikolaj Machowski ( mikmach AT wp DOT pl )
